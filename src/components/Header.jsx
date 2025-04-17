@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import useAuthStore from "../store/useAuthStore";
-import api from "../utils/axios";
+import { RiMenuFill } from "react-icons/ri";
 
 const Header = () => {
 	const { token, user, logout } = useAuthStore();
@@ -23,7 +23,7 @@ const Header = () => {
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNav"
 				>
-					<i className="bi bi-menu-button-fill" />
+					<RiMenuFill size={30} />
 				</button>
 				<div
 					className="collapse navbar-collapse justify-content-center"
