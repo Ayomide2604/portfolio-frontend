@@ -8,7 +8,10 @@ const Project = ({ title, tags, image }) => {
 
 					{tags &&
 						tags.map((tag) => (
-							<span className="badge bg-secondary badge-pill p-2 ms-2">
+							<span
+								key={tag}
+								className="badge bg-secondary badge-pill p-2 ms-2"
+							>
 								{tag}
 							</span>
 						))}
