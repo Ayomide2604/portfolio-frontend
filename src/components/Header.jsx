@@ -16,7 +16,7 @@ const Header = () => {
 					AyoTheDev
 				</Link>
 				<button
-					className="nav-menu d-md-none d-flex justify-content-end"
+					className="nav-menu d-md-none d-flex justify-content-center align-items-center"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNav"
@@ -34,29 +34,29 @@ const Header = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" href="/#service">
+							<a className="nav-link" href="#service">
 								Service
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" href="/#about">
+							<a className="nav-link" href="#about">
 								About
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" href="/#portfolio">
+							<a className="nav-link" href="#portfolio">
 								Portfolio
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" href="/#testimonial">
+							<a className="nav-link" href="#testimonial">
 								Testimonials
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" href="/#blog">
+							<a className="nav-link" href="#blog">
 								Blog
-							</Link>
+							</a>
 						</li>
 					</ul>
 					<button className="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
