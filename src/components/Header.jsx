@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import useAuthStore from "../store/useAuthStore";
 import { RiMenuFill } from "react-icons/ri";
 
 const Header = () => {
-	const { token, user, logout } = useAuthStore();
 	return (
 		<nav
 			id="navbar-top"
@@ -18,12 +16,12 @@ const Header = () => {
 					AyoTheDev
 				</Link>
 				<button
-					className="nav-menu d-md-none"
+					className="nav-menu d-md-none d-flex justify-content-end"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNav"
 				>
-					<RiMenuFill size={30} />
+					<RiMenuFill size={40} />
 				</button>
 				<div
 					className="collapse navbar-collapse justify-content-center"
@@ -60,20 +58,6 @@ const Header = () => {
 								Blog
 							</Link>
 						</li>
-						{token ? (
-							<>
-								<li className="nav-item">
-									<Link className="nav-link" to="/dashboard">
-										Welcome {user.username}
-									</Link>
-								</li>
-								<li className="nav-item">
-									<Link onClick={logout} className="nav-link">
-										Logout
-									</Link>
-								</li>
-							</>
-						) : null}
 					</ul>
 					<button className="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
 						Contact
