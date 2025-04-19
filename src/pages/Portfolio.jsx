@@ -1,5 +1,6 @@
 import Project from "../components/Project";
 import projects from "../data/projects";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
 	return (

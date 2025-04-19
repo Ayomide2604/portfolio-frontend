@@ -30,7 +30,7 @@ const Skills = () => {
 				</div>
 				<div className="col-9 col-md-5 " data-aos="slide-right">
 					<div className="row">
-						{skills.map((skill, index) => (
+						{skills.map((skill) => (
 							<div className=" col-4 col-sm-4 col-md-3 mt-4 ">
 								<Skill
 									name={skill.name}

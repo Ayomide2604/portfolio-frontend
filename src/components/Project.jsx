@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Project = ({ title, tags, image }) => {
 	return (
 		<div className="post col-md-4 " data-aos="fade-up">
 			<div className="card">
-				<img src={image} className="card-img-top" alt="2048 Game" />
+				<img src={image[0]} className="card-img-top" alt={title} />
 				<div className="card-body text-center">
 					<h4 className="card-title">{title}</h4>
 
@@ -16,9 +18,9 @@ const Project = ({ title, tags, image }) => {
 							</span>
 						))}
 					<br />
-					<a href="#" className="link">
+					<Link to={`projects/${title}`} className="link">
 						Read More
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

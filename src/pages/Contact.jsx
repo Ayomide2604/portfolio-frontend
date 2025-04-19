@@ -36,7 +36,6 @@ const Contact = () => {
 			});
 	};
 
-	// 🌀 Loading Spinner View
 	if (loading) {
 		return (
 			<Container>
@@ -51,7 +50,6 @@ const Contact = () => {
 		);
 	}
 
-	// ✅ Success or Error View
 	if (success === true) {
 		return (
 			<Container>
