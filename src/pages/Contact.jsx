@@ -5,9 +5,9 @@ const Contact = () => {
 		<section className="contact py-5" id="contact">
 			<div className="heading text-center">
 				<small>Get in Touch</small>
-				<h3>Any Questions? Feel Free to Contact</h3>
+				<h3> Feel Free to Contact Me</h3>
 			</div>
-			<div className="row justify-content-evenly mt-5">
+			<div className="row justify-content-center mt-5">
 				<div className="col-md-5 col-10 contact-details" data-aos="slide-right">
 					<div className="row justify-content-evenly">
 						<div className="col-1">

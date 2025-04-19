@@ -10,7 +10,7 @@ const Skill = ({ name, Icon, color }) => {
 				<Icon style={{ fontSize: "50px" }} color={color} />
 			</div>
 			<br />
-			<span className="text">{name}</span>
+			<span className="text-sm">{name}</span>
 		</div>
 	);
 };
