@@ -30,7 +30,7 @@ const ProjectDetail = () => {
 							navigation
 							spaceBetween={20}
 							slidesPerView={1}
-							className="portfolio-details-slider"
+							className=""
 						>
 							{project.image?.length > 0 ? (
 								project.image.map((img, index) => (
@@ -40,11 +40,9 @@ const ProjectDetail = () => {
 											alt={`Slide ${index}`}
 											className="img-fluid"
 											style={{
-												borderRadius: "12px",
 												width: "100%",
-												maxHeight: "400px",
-												objectFit: "cover",
-												backgroundColor: "#f9f9f9",
+												maxHeight: "300px",
+												objectFit: "contain",
 											}}
 										/>
 									</SwiperSlide>

@@ -392,11 +392,12 @@ footer .link-group a:hover {
 	animation: pulse 3s infinite;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
+/* Portfolio Details Section */
 .portfolio-details .portfolio-details-slider img {
 	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	object-fit: cover;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -425,6 +426,7 @@ footer .link-group a:hover {
 	background-color: var(--surface-color);
 	padding: 30px;
 	box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -459,4 +461,30 @@ footer .link-group a:hover {
 .portfolio-details .portfolio-description p {
 	padding: 0;
 	color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* ------------------- */
+/* Responsive Queries  */
+/* ------------------- */
+
+@media (max-width: 991px) {
+	.portfolio-details .row {
+		flex-direction: column;
+	}
+	.portfolio-details .col-lg-8,
+	.portfolio-details .col-lg-4 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.portfolio-details .portfolio-info {
+		padding: 20px;
+	}
+	.portfolio-details .portfolio-info h3 {
+		font-size: 20px;
+	}
+	.portfolio-details .portfolio-description h2 {
+		font-size: 22px;
+	}
 }
