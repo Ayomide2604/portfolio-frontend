@@ -24,14 +24,14 @@ const Header = () => {
 					<RiMenuFill size={50} />
 				</button>
 				<div
-					className="collapse navbar-collapse justify-content-center"
+					className="collapse navbar-collapse justify-content-evenly"
 					id="navbarNav"
 				>
-					<ul className="navbar-nav gap-3" style={{ fontSize: "1.1rem" }}>
+					<ul className="navbar-nav gap-5" style={{ fontSize: "1.1rem" }}>
 						<li className="nav-item">
-							<Link className="nav-link" aria-current="page" to="/">
+							<a className="nav-link" aria-current="page" href="#hero">
 								Home
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#service">
@@ -53,17 +53,14 @@ const Header = () => {
 								Testimonials
 							</a>
 						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#blog">
-								Blog
-							</a>
-						</li>
-						<li>
+					</ul>
+					<div>
+						<a href="#contact" className="text-decoration-none">
 							<button className="c-btn py-2 px-4 rounded-pill  d-md-block">
 								Contact
 							</button>
-						</li>
-					</ul>
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>

@@ -5,7 +5,7 @@ import Skill from "../components/Skill";
 
 const Skills = () => {
 	return (
-		<section className="skill mt-5 py-5" id="#about">
+		<section className="skill mt-5 py-5" id="about">
 			<div className="row justify-content-center">
 				<div className="col-10 col-md-5 skill-detail" data-aos="slide-left">
 					<div className="heading mt-5 mt-md-3">

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
 	return (
-		<section className="home pt-5 pb-5" id="home">
+		<section className="home pt-5 pb-5" id="hero">
 			<div className="row justify-content-evenly align-middle">
 				<div
 					className="col-10 col-md-6 text-center text-md-start"
@@ -18,7 +20,7 @@ const Hero = () => {
 						and APIs to create seamless and reliable web applications.
 					</p>
 					<button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-						Hire Me
+						<Link to="#contact">Hire Me</Link>
 					</button>
 				</div>
 				<div className="col-10 col-md-4 mt-3 d-md-block">
