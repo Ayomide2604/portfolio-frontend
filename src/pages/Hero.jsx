@@ -19,9 +19,11 @@ const Hero = () => {
 						user-centric design. My expertise includes working with databases
 						and APIs to create seamless and reliable web applications.
 					</p>
-					<button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-						<Link to="#contact">Hire Me</Link>
-					</button>
+					<a href="#contact" className="text-decoration-none">
+						<button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+							Hire Me
+						</button>
+					</a>
 				</div>
 				<div className="col-10 col-md-4 mt-3 d-md-block">
 					<img
