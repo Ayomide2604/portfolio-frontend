@@ -17,7 +17,7 @@ const Skills = () => {
 							working with various backend technologies to build robust and
 							secure web applications.
 						</p>
-						<button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+						<button className="c-btn h-btn my-5 py-3 px-5 rounded-pill">
 							<a
 								href="Entry Level Web Developer Resume.pdf"
 								download="SampleCV"
